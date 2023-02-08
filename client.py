@@ -2,7 +2,10 @@
 
 import socket
 
-PORT = 80
+hostname = socket.gethostname()
+server_ipaddr = socket.gethostbyname(hostname)
+
+PORT = 8080
 FQDN = "sizza.net"
 
 def get_ip(url_str):
